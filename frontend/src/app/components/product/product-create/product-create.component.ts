@@ -12,8 +12,9 @@ import { Product } from '../product.model';
 export class ProductCreateComponent implements OnInit {
 
   product: Product = {
+    id: 0 , // -> era para ser null
     name: "",
-    price: null
+    price: 0 // CONSERTAR ISSO!
   }
 
   constructor(private productService: ProductService, private router: Router) { }

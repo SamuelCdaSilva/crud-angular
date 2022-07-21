@@ -1,6 +1,5 @@
 export interface Product {
-    id?: number 
+    id: number
     name: string
-    price: null // --> era para ser number...
+    price: number // --> era para ser number...
 }
-
