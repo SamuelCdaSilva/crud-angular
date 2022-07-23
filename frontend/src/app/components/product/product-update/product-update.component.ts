@@ -16,7 +16,7 @@ export class ProductUpdateComponent implements OnInit {
 
   ngOnInit(): void {
     const id = this.route.snapshot.paramMap.get('id')
-    this.productService.readById(parseInt(id!)).subscribe((product) => {
+    this.productService.readById(Number(id)).subscribe((product) => {
     this.product = product;})
   }
 
