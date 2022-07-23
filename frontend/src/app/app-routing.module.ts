@@ -9,6 +9,7 @@ import { ProductUpdateComponent } from './components/product/product-update/prod
 
 
 
+
 const routes: Routes = [
   {
     path: "",
@@ -22,10 +23,11 @@ const routes: Routes = [
     path: "products/create",
     component: ProductCreateComponent
   },
-  {
+  { 
     path: "products/update/:id",
     component: ProductUpdateComponent
   }
+
 ];
 
 @NgModule({
